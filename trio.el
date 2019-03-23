@@ -3,7 +3,7 @@
 ;; Copyright (C) 2019 Chimay
 
 ;; Author : Chimay
-;; Name: Duo
+;; Name: Trio
 ;; Package-Version: 1.0
 ;; Package-requires: ((emacs "26"))
 ;; Keywords: lisp, extensions, list, double, dual, reverse
