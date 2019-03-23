@@ -55,6 +55,6 @@ element 1         element 2         element 3         element 4
 #+end_src
 
 
-;; Local Variables:
-;; indent-tabs-mode: nil
-;; End:
+# Local Variables:
+# indent-tabs-mode: nil
+# End:
