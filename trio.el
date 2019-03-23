@@ -1,4 +1,4 @@
-;;; duo.el --- In place list operations in Elisp     -*- lexical-binding: t; -*-
+;;; trio.el --- In place list operations in Elisp    -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019 Chimay
 
@@ -6,8 +6,8 @@
 ;; Name: Duo
 ;; Package-Version: 1.0
 ;; Package-requires: ((emacs "26"))
-;; Keywords: lisp, extensions, list, in-place, operation
-;; URL: https://github.com/chimay/duo
+;; Keywords: lisp, extensions, list, double, dual, reverse
+;; URL: https://github.com/chimay/trio
 
 ;;; Commentary:
 
@@ -18,6 +18,42 @@
 ;;
 ;; car of reference to cons in list = reference to previous cons in list
 ;; cdr of reference to cons in list = cons in list
+;;
+;;                                trio
+;; 			   +-----+-----+
+;; 			   |     |     |
+;;       +--------------------+---  |  ---+--------------------+
+;;       |               	   |     |     |		    |
+;;       |		      	   +-----+-----+		    |
+;;       |			     car   cdr  		    |
+;;       |				        		    |
+;;       +				        		    +
+;; +-----+-----+     +-----+-----+     +-----+-----+     +-----+-----+
+;; |     |     |	  |     |     |     |     |     |     |     |     | reflist
+;; |     | |   +<----+--   |  |  +<----+---  |  |  +<----+--   |  |  | iterate in
+;; |     | |   |	  |     |  |  |     |     |  |  |     |     |  |  | reverse
+;; +-----+-+---+	  +-----+--+--+     +-----+--+--+     +-----+--+--+ order
+;;         |                  |                 |                 |
+;;         |                  |                 |                 |
+;;         |                  |                 |                 |
+;;         |                  |                 |                 |
+;;         |                  |                 |                 |
+;; +-----+-----+     +-----+-----+     +-----+-----+     +-----+-----+
+;; |     |     |     |     |     |     |     |     |     |     |     |
+;; |  |  |  ---+---->+  |  |  ---+---->+  |  |  ---+---->+  |  |     | classic list
+;; |  |  |     |     |  |  |     |     |  |  |     |     |  |  |     |
+;; +--+--+-----+     +--+--+-----+     +--+--+-----+     +--+--+-----+
+;;    |                 |                 |                 |
+;;    |                 |                 |                 |
+;;    |                 |                 |                 |
+;;    |                 |                 |                 |
+;;    |                 |                 |                 |
+;; +-----+           +-----+           +-----+           +-----+
+;; |     |		  |     |           |     |           |     |
+;; |     |		  |     |           |     |           |     |
+;; |     |		  |     |           |     |           |     |
+;; +-----+		  +-----+           +-----+           +-----+
+;; element 1         element 2         element 3         element 4
 
 
 ;;; License:

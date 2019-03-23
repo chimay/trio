@@ -2,8 +2,14 @@
 #+STARTUP: showall
 
 * Table of contents                                                     :TOC_2_gh:
+- [[#work-in-progress][Work in progress]]
 - [[#introduction][Introduction]]
   - [[#structure][Structure]]
+
+* Work in progress
+
+Almost empty shell.
+
 
 * Introduction
 
